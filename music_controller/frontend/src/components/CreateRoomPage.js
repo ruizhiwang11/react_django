@@ -50,12 +50,25 @@ export default class CreateRoomPage extends Component {
             <TextField
               required={true}
               type="number"
-              defaultValue={this.defaultValue}
+              defaultValue={this.defaultVotes}
               inputProps={{
                 min: 1,
               }}
             ></TextField>
+            <FormHelperText>
+              <div align="center">Votes Required to skip song </div>
+            </FormHelperText>
           </FormControl>
+        </Grid>
+        <Grid item xs={12} align="center">
+            <Button color="primary" variant="contained">
+              Create a Room
+            </Button>
+        </Grid>
+        <Grid item xs={12} align="center">
+            <Button color="Secondary" variant="contained" to="/" component={Link}>
+              Back
+            </Button>
         </Grid>
       </Grid>
     );
