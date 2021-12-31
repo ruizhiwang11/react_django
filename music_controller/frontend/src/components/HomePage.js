@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import RoomJoinPage from "./RoomJoinPage";
 import CreateRoomPage from "./CreateRoomPage";
+import Room from "./Room";
 import {
   BrowserRouter as Router,
-  Routes,
+  Switch,
   Route,
   Link,
   Redirect,
@@ -17,11 +18,14 @@ export default class HomePage extends Component {
   render() {
     return (
       <Router>
-        <Routes>
-          <Route exact path="/" element={<p> asd </p>} />
-          <Route exact path="/join" element={<RoomJoinPage />} />
-          <Route exact path="/create" element={<CreateRoomPage />} />
-        </Routes>
+        <Switch>
+          <Route exact path="/">
+            <p>This is the home page</p>
+          </Route>
+          <Route path="/join" component={RoomJoinPage} />
+          <Route path="/create" component={CreateRoomPage} />
+          <Route path="/room/:roomCode" component={Room} />
+        </Switch>
       </Router>
     );
   }

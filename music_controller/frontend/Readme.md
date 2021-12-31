@@ -12,4 +12,4 @@
 
 ### npm install @babel/plugin-proposal-class-properties // async / await code for react
 
-### npm install react-router-dom 
+### npm install react-router-dom@5.2.0

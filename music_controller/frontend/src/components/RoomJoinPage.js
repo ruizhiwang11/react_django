@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Route } from "react-router";
 
 export default class RoomJoinPage extends Component {
   constructor(props) {
