@@ -19,6 +19,10 @@
 ## Start a server
 ### python manage.py runserver
 
+## clear database
+### python manage.py flush
+
+
 # Useful command for react/npm
 
 ### 1. npm init -y
